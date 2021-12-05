@@ -1,8 +1,10 @@
 module.exports = {
-    plugins: [
-        require('autoprefixer')({
-            overrideBrowserslist: ['defaults and last 4 versions'],
-        }),
-        require('postcss-import')(),
-    ],
+  plugins: [
+    require('precss'),
+    require('postcss-import'),
+    require('postcss-cssnext'),
+    require('postcss-nested'),
+    require('postcss-preset-env'),
+    require('postcss-custom-media'),
+  ],
 };
