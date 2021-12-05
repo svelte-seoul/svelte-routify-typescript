@@ -6,6 +6,7 @@
     width: calc(100vw - 2em);
     height: calc(100vh - 2em);
     background-color: var(--background);
+    color: var(--text);
     text-align: center;
   }
 

@@ -1,17 +1,3 @@
-<script>
-  import { createEventDispatcher } from "svelte";
-
-  const dispatch = createEventDispatcher();
-
-  function handleClick() {
-    dispatch("click");
-  }
-</script>
-
-<button on:click={handleClick}>
-  <slot />
-</button>
-
 <style>
   button {
     background-color: var(--primary);
@@ -22,3 +8,17 @@
     text-transform: uppercase;
   }
 </style>
+
+<script>
+  import {createEventDispatcher} from 'svelte';
+
+  const dispatch = createEventDispatcher();
+
+  function handleClick() {
+    dispatch('click');
+  }
+</script>
+
+<button on:click={handleClick}>
+  <slot />
+</button>
