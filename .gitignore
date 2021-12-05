@@ -2,3 +2,4 @@ node_modules
 .routify
 dist
 build
+coverage

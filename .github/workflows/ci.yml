@@ -30,7 +30,7 @@ jobs:
         run: rm -rf build
 
       - name: Test
-        run: pnpm test --coverage
+        run: pnpm test -- --coverage
 
       # - name: Upload coverage to Codecov
       #   uses: codecov/codecov-action@v1
