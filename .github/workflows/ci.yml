@@ -9,8 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./apps/web
 
     steps:
       - uses: actions/checkout@v2
