@@ -1,3 +1,21 @@
+<style lang="postcss">
+  @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+  @custom-media --mobile (max-width: 640px);
+  main {
+    padding: 1em;
+    width: calc(100vw - 2em);
+    height: calc(100vh - 2em);
+    background-color: var(--background);
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
+</style>
+
 <script lang="ts">
   import './i18n';
   import {Router} from '@roxi/routify';
@@ -18,4 +36,6 @@
   toggleTheme();
 </script>
 
-<Router routes={routes} />
+<main>
+  <Router routes={routes} />
+</main>
