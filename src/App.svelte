@@ -2,12 +2,13 @@
   @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
   @custom-media --mobile (max-width: 640px);
   main {
-    padding: 1em;
-    width: calc(100vw - 2em);
-    height: calc(100vh - 2em);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     background-color: var(--background);
     color: var(--text);
     text-align: center;
+
+    display: grid;
   }
 
   @media (min-width: 640px) {

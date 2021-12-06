@@ -1,10 +1,8 @@
 html,
 body {
-  position: relative;
-}
-
-body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
   font-family: Roboto;
   transition: background-color 0.3s;
 
