@@ -4,5 +4,9 @@
   },
   "temp": {
     "title": "Template"
+  },
+  "sign-in": {
+    "title": "User Program",
+    "login": "Login"
   }
 }
