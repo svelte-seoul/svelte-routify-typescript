@@ -1,23 +1,24 @@
-import { defineConfig } from 'vite';
-import preprocess from 'svelte-preprocess'
-import { svelte } from '@sveltejs/vite-plugin-svelte';
+import {defineConfig} from 'vite';
+import preprocess from 'svelte-preprocess';
+import routify from '@roxi/routify/vite-plugin';
+import {svelte} from '@sveltejs/vite-plugin-svelte';
 
-export default defineConfig(({ command, mode }) => {
-  const isProduction = mode === 'production';
+const production = process.env.NODE_ENV === 'production';
 
-  return {
-    server: {
-      port: 5000,
-    },
-    plugins: [
-      svelte({
-        preprocess: preprocess({
-          postcss: true,
-          sourceMap: !isProduction,
-        }),
-        hot: !isProduction,
-      })
-    ],
-    rollupdedupe: ['svelte'],
-  }
+export default defineConfig({
+  clearScreen: false,
+  server: {port: 1337},
+  plugins: [
+    routify(),
+    svelte({
+      emitCss: true,
+      compilerOptions: {dev: !production},
+      extensions: ['.svelte'],
+      preprocess: preprocess({
+        postcss: true,
+        sourceMap: !production,
+      }),
+      hot: !production,
+    }),
+  ],
 });
