@@ -20,7 +20,7 @@
 <script lang="ts">
   import './i18n';
   import {Router} from '@roxi/routify';
-  import {routes} from '../.routify/routes';
+  import routes from '../.routify/routes.default.js';
   import type {ThemeStore} from 'svelte-theme';
   import {getContext} from 'svelte';
 
