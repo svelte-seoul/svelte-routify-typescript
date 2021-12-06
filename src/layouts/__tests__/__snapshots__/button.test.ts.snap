@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render without error 1`] = `
+<body>
+  <div>
+    <button
+      class="svelte-s1pp3s"
+    />
+  </div>
+</body>
+`;
