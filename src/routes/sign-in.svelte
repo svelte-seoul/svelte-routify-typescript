@@ -53,7 +53,6 @@
     //     email,
     //     password,
     //   });
-
     //   if (error) {
     //     throw error;
     //   }
@@ -63,34 +62,28 @@
     //   loading = false;
     // }
   };
-
 </script>
 
 <div class="container">
-  <img class="logo" src={svgLogo} alt="logo"/>
+  <img class="logo" src={svgLogo} alt="logo" />
   <h3>{$_('sign-in.title')}</h3>
   <EditText
     containerStyle="margin-bottom: 8px"
     inputStyle="font-size: 14px;"
     type="email"
-    placeholder='email@email.com'
+    placeholder="email@email.com"
   >
-    <img slot="leftElement" class="icon" src={svgMail} alt="email"/>
+    <img slot="leftElement" class="icon" src={svgMail} alt="email" />
   </EditText>
   <EditText
     containerStyle="margin-bottom: 8px"
     inputStyle="font-size: 14px;"
     type="password"
-    placeholder='********'
+    placeholder="********"
   >
-    <img slot="leftElement" class="icon" src={svgLock} alt="lock"/>
+    <img slot="leftElement" class="icon" src={svgLock} alt="lock" />
   </EditText>
-  <Button
-    on:click={handleLogin}
-    primary
-    disabled={loading}
-    loading={loading}
-  >
+  <Button on:click={handleLogin} primary disabled={loading} loading={loading}>
     <div class="text" style="font-weight: 500;">
       {$_('sign-in.login')}
     </div>

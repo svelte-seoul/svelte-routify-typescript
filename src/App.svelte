@@ -5,7 +5,7 @@
     background-color: var(--background);
     color: var(--text);
     text-align: center;
-    
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
