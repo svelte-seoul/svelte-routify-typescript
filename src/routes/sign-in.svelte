@@ -39,7 +39,7 @@
 <script lang="ts">
   import {_} from 'svelte-i18n';
   import {svgLock, svgLogo, svgMail} from '../utils/icons';
-  import EditText from '../layouts/edittext.svelte';
+  import EditText from '../layouts/edit-text.svelte';
   import Button from '../layouts/button.svelte';
 
   let loading = false;
