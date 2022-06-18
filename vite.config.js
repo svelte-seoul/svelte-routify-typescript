@@ -21,4 +21,7 @@ export default defineConfig({
       hot: !production,
     }),
   ],
+  test: {
+    environment: 'jsdom',
+  },
 });
