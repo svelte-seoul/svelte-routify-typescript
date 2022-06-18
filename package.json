@@ -17,12 +17,14 @@
     "svelte-theme": "^1.4.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
     "@dooboo/eslint-config-svelte": "^0.0.7",
     "@roxi/routify": "^3.0.0-next.69",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.32",
     "@testing-library/svelte": "^3.0.3",
     "@tsconfig/svelte": "^3.0.0",
     "@types/jest": "^27.0.3",
+    "@types/node": "^18.0.0",
     "babel-jest": "^27.4.5",
     "eslint": "^8.5.0",
     "jest": "^27.4.5",
